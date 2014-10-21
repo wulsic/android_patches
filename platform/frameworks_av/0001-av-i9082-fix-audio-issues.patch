@@ -19,7 +19,7 @@ index 3bb1c80..8bafbac 100644
          }
      }
 +// Capri's OMX fail to set a reasonable default size from width and height
-+#ifdef CAPRI_HWC
++#ifndef CAPRI_HWC
 +    else if (!strncmp(mComponentName, "OMX.BRCM.vc4.decoder.", 21)) {
 +        int32_t width;
 +        int32_t height;
